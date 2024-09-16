@@ -26,17 +26,16 @@ public class Main {
     }
 
     public static boolean hasTeen(int firstAge, int secondAge, int thirdAge) {
-        if (firstAge >= 13 && firstAge<=19 || secondAge>=13 && secondAge<=19 || thirdAge>=13 && thirdAge<=19 ) {
-            return true;
-        }
-        return false;
+        return firstAge >= 13 && firstAge <= 19 || secondAge >= 13 && secondAge <= 19 || thirdAge >= 13 && thirdAge <= 19;
     }
 
-    public static boolean isCatPlaying(boolean isSummer, int temp){
-        int lowestTemp = 25;
-        int highestTemp = isSummer ? 45: 35;
 
-        return temp < highestTemp && temp > lowestTemp;
+    public static boolean isCatPlaying(boolean isSummer, int temp) {
+        int lowestTemp = 25;
+        int highestTemp = isSummer ? 45 : 35;
+
+
+        return temp >= lowestTemp && temp <= highestTemp;
     }
 
     public static double area(double width, double height){
